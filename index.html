@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+  .content {
+  max-width: 1400px;
+  margin: auto;
+}
+.content1 {
+  max-width: 500px;
+  margin: auto;
+}
+.content2 {
+  max-width: 1400px;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  padding: 10px;
+  
+  
+  font-size: 20px;
+  color: rgb(111, 14, 14);
+  height: 10px;
+
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+
+/* Style the list inside the menu */-
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(238, 233, 233);
+  padding: 70px;
+  text-align: left;
+  color: rgb(87, 86, 86);
+  size: 1px;
+  
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: right;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+div.gallery {
+  margin: 20px;
+  border: none;
+  float: left;
+
+}
+
+div.gallery:hover {
+  border: none;
+}
+
+div.gallery img {
+  width: 30%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery2 {
+  margin: 5px;
+  border: none;
+  float: left;
+  width: 340px;
+}
+
+div.gallery2:hover {
+  border: none;
+}
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+div.desc1 {
+  padding: 20px;
+  text-align: left;
+}
+div.gallery2.a{
+  text-decoration: none;
+  color: rgb(72, 72, 169);
+}
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.left{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.class2 {
+  position: relative;
+  text-align: center;
+  
+}
+.button {
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: black;}
+.button2 {background-color: rgb(227, 217, 217);}
+.table1{
+  font-size: 1px;
+}
+table{
+  font-size: 13px ;
+  
+}
+.fa {
+  padding: 14px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <div class="content">
+<header>
+  
+    <img src="icon.png" inline="center" width="105" height="23"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+      
+    <a href=”page_name.html”><font size="2">Microsoft 365</font></a>&nbsp;&nbsp;
+    <a href=”page_name.html”><font size="2">Office</font></a>&nbsp;&nbsp;
+    <a href=”page_name.html”><font size="2">Surface</font></a>&nbsp;&nbsp;
+    <a href=”page_name.html”><font size="2">Xbox</font></a>&nbsp;&nbsp;
+    <a href=”page_name.html”><font size="2">Support</font></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+    
+      <div class="dropdown" text-align="right">
+        <section class="dropbtn"><font size="2" align="right">All Microsoft&nbsp;⌵</font></section>
+        <div  class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+      </div>
+    
+ 
+      <a href=”page_name.html”><font size="2">Search</font></a><i class="fa fa-search"></i>&nbsp;&nbsp;
+    <a href=”page_name.html”><font size="2">Cart</font></a><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;
+    <a href=”page_name.html”><font size="2">Sign in</font></a><i class="fa fa-sign-in"></i>
+  </div>
+</div>
+
+</header>
+<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="microsoftbg.jfif" style="width:100%">
+    <div class="left"><h1>Microsoft 365</h1><br><small></small>
+      Premium office apps, extra cloud storag, advanced security, and more-all in <br>one convinenient subscription</small><br><br>
+      <button class="button button1" type="button">For upto 6 people ❯</button>
+      &nbsp;<a> For 1 Person ❯</a></button></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="microsoftbg2.jfif" style="width:100%">
+    <div class="left"><h1>Surface Pro 8</h1><br><small></small>
+      Do more with a large 13-inch, touchscreen, faster connections and extra <br>speed. Now available with Windows 11</small><br><br>
+      <button class="button button1" type="button">Learn more ❯</button></div>
+      
+  </div>
+  
+
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+  <div class="content1">
+   
+  <div class="gallery"align="center">
+    <a target="microo.html" href="img_5terre.jpg">
+      <img src="icon1.png" alt="Cinque Terre" width="30" height="30">
+    </a>
+    <div class="desc">Choose your<br>Microsoft 365</div>
+  </div>
+  <section align=""center">
+  <div class="gallery"align="center">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="icon3.webp" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Eplore surface<br>devices</div>
+  </div>
+  
+  <div class="gallery"align="center">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="icon2.webp" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Buy Xbox Games</div>
+  </div>
+  
+  <div class="gallery"align="center">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="icon4.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Get Windows 11</div>
+  </div>
+</div>
+  <br>
+  <div class="content2">
+  <div class="gallery2">
+    <a target="microo.html" href="img_5terre.jpg">
+      <img src="pcgames.jfif" alt="Cinque Terre" width="300" height="250">
+    </a>
+    <div class="desc1"> PC Game Pass
+      <small>Unlock 100+ great games and member discounts, plus get your first month for ₹50. Offer available to new subscribers only.</small>
+      <br>
+      <a href="microo.html">
+      Join now ❯</a></div>
+  </div>
+  
+  <div class="gallery2">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="lap1.webp" alt="Forest" width="300" height="250">
+    </a>
+    <div class="desc1">Surface Laptop 4
+      <small> Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved performance.</small>
+      <br>
+      <a href="microo.html">
+      Shop now ❯</a></div>
+  </div>
+  
+  <div class="gallery2">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="lap2.webp" alt="Northern Lights" width="300" height="250">
+    </a>
+    <div class="desc1">Surface Laptop Go
+      <small> Make the most of every day with the sleek style and performance of our lightest Surface laptop.</small>
+      <br>
+      <a href="microo.html">
+      Shop now ❯ </a></div>
+  </div>
+  
+  <div class="gallery2">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="lap3.webp" alt="Mountains" width="300" height="250">
+    </a>
+    <div class="desc1">Designed for life today – and tomorrow
+      <small> The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</small>
+      <br>
+      <a href="microo.html"> See if your PC is ready ❯ </a></div>
+  </div>
+  <br>
+  <div class="class2">
+    <br>
+    <img src="microedge.jfif" alt="Microsoft" width="100%" height="500">
+    <div class="centered"><h1>Microsoft Edge</h1><br><small></small>
+      World-class performance with more privacy, more productivity and more value while you browse</small><br><br>
+      <button class="button button1" type="button">Download now ❯</button></div>
+  </div>
+</div>  
+<br>
+<div class="content2">
+<h2><b>For business</b></h2>
+  <div class="gallery2">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="pic1.webp" alt="Cinque Terre" width="300" height="250">
+    </a>
+    <div class="desc1"> Surface Pro 8 for Business
+      <small>Get unprecedented levels of performance and versatility on a 13-inch screen. Discover the newest Surface for Business devices now available. Available with Windows 11.</small>
+      <br>
+      <a href="microo.html">
+        Learn more ❯</a></div>
+  </div>
+  
+  <div class="gallery2">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="pic2.webp" alt="Forest" width="300" height="250">
+    </a>
+    <div class="desc1">Get Microsoft Teams for free
+      <small> Online meetings, chat and shared cloud storage – all in one place.</small>
+      <br>
+      <a href="microo.html">
+        Sign up for free  ❯</a></div>
+  </div>
+  
+  <div class="gallery2">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="pic3.webp" alt="Northern Lights" width="300" height="250">
+    </a>
+    <div class="desc1">Microsoft 365 for business
+      <small> Stay a step ahead with powerful apps for productivity, connection and security.</small>
+      <br>
+      <a href="microo.html">
+      Shop now ❯ </a></div>
+  </div>
+  
+  <div class="gallery2">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="pic4.webp" alt="Mountains" width="300" height="250">
+    </a>
+    <div class="desc1">Windows 11 for business is here
+      <small> Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</small>
+      <br>
+      <a href="microo.html">Learn more  ❯ </a></div>
+  </div>
+</div>
+<table>
+<div class="social" align=""left"></div>
+<br><br>
+FollowMicrosoft&nbsp;<a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;<a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;<a href="#" class="fa fa-youtube"></a>
+</div>
+</table>
+<footer>
+  <table style="width:100%" cellpadding="10">
+    <tr>
+      <th>What's new</th>
+        <th>Microsoft Store</th>
+        <th>Education</th>
+        <th>Business</th>
+        <th>Developer & IT</th>
+        <th>Company</th>
+    </tr>
+   <div class="table1"> <tr>     
+       <td><a><small>Microsoft 365</small></a></td>
+      <td><a><small>Account profile</small></a></td>
+      <td><a><small>Microsoft in education</small></a></td>
+      <td><a><small>Microsoft Cloud</small></a></td>
+      <td><a><small>Developer Center</small></a></td>
+      
+      <td><a><small></small>Careers</small></a></td>
+    </tr>
+    <tr>
+      <td><a><small>Surface Pro X</small></a></td>
+      <td><a><small>Download Center</small></a></td>
+      <td><a><small>Devices for education</small></a></td>
+      <td><a><small>Microsoft Security</small></a></td>
+      <td><a><small>Documentation</small></a></td>
+      <td><a><small>About Microsoft</small></a></td>
+      
+    </tr>
+    <tr>
+      <td><a><small>Surface Pro 7</small></a></td>
+      <td><a><small>Microsoft Store Support</small></a></td>
+      <td><a><small>Microsoft Teams for Education</small></a></td>
+      <td><a><small>Dynamics 365</small></a></td>
+      <td><a><small>microsoft Tech Community</small></a></td>
+      <td><a><small>Privacy at Microsoft</small></a></td>
+    </tr>
+    <tr>
+      <td><a><small>Surface Laptop 3</small></a></td>
+      <td><a><small>Returns</small></a></td>
+      <td><a><small>Microsoft 365 Education</small></a></td>
+      <td><a><small>Dynamics 365</small></a></td>
+      <td><a><small>Microsoft Tech Community</small></a></td>
+      <td><a><small>Privacy at Microsoft</small></a></td>
+    </tr>
+    <tr>
+      <td><a><small>Windows 11 apps</small></a></td>
+      <td><a><small>Order tracking</small></a></td>
+      <td><a><small>Office Education</small></a></td>
+      <td><a><small>Microsoft 365</small></a></td>
+      <td><a><small>Azure Marketplace</small></a></td>
+      <td><a><small>Investors</small></a></td>
+    </tr>
+    <tr>
+      <td><a></a></td>
+      <td><a></a></td>
+      <td><a><small>Educator training and development</small></a></td>
+      <td><a><small>Microsoft Advertising</small></a></td>
+      <td><a><small>AppSource</small></a></td>
+      <td><a><small>Security</small></a></td>
+    </tr>
+    <tr>
+      <td><a></a></td>
+      <td><a></a></td>
+      <td><a><small>Deals for students and parents</small></a></td>
+      <td><a><small>Microsoft Industry</small></a></td>
+      <td><a><small>Microsoft Power Platform</small></a></td>
+      <td><a><small>Sustainability</small></a></td>
+    </tr>
+    <tr>
+      <td><a></a></td>
+      <td><a></a></td>
+      <td><a><small>Azure for students</small></a></td>
+      <td><a><small>Microsoft Teams</small></a></td>
+      <td><a><small>Visual Studio</small></a></td>
+      <td><a></a></td>
+    
+    </tr>
+  </div>
+  </table>
+  <div class="footerfooter">
+    <a href="https://www.microsoft.com/en-in/locale?absoluteReturnUrl=https%3a%2f%2fwww.microsoft.com%2fen-in" >
+      <font color="grey" size="1px">English(India)</font></a>
+<div class="footerright" align="right"><font size="1px" align="right">
+    <a>Contact Microsoft</a>&nbsp;
+    <a>Privacy</a>&nbsp;
+    <a>Terms of use</a>&nbsp;
+    <a>Trademarks</a>&nbsp;
+    <a>About our ads</a>&nbsp;
+    <a> Microsoft 2022</a>
+  </font>
+</div>
+  </p>
+  </div>
+</footer>
+
+
+
+
+  </div>
+  </div>
+  
+</div>
+</body>
+</html>
+
